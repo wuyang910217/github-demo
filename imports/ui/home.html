@@ -1,0 +1,13 @@
+<template name='home'>
+  {{#if currentUser}}
+  <img src="{{profile.avatar_url}}" alt="avatar" class="avatar">
+  <p>欢迎回来，{{profile.username}}</p>
+  <button class="btn" id="go">去主页</button>
+  {{else}}
+  <p>访问前，请先登录</p>
+  <button class="btn" id="login">使用github登录</button>
+  {{#if loginError}}
+    <p class="err">错误信息：{{ errorReason }}</p>
+  {{/if}}
+  {{/if}}
+</template>

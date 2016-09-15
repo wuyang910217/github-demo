@@ -1,0 +1,29 @@
+.content {
+  background-color: #ce4f41;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.main-container {
+  flex: 1;
+  max-width: 450px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  img {
+    flex-grow: 1 1 25%;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+  }
+  p{
+    flex: 1 1 100%;
+  }
+}
+

@@ -1,0 +1,11 @@
+<template name='main'>
+  <div class="main-container">
+    <img src="{{githubInfo.avatar_url}}" alt="avatar">
+      <p>账户名：{{githubInfo.username}}</p>
+      <p>昵称：{{githubInfo.nickname}}</p>
+      <p>github地址：{{githubInfo.html_url}}</p>
+      <p>仓库数：{{githubInfo.public_repos}}</p>
+      <p>Followers：{{githubInfo.followers}}</p>
+      <p>Following：{{githubInfo.following}}</p>
+  </div>
+</template>

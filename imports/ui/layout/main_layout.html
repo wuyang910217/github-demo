@@ -1,0 +1,23 @@
+<template name ='mainLayout'>
+  <div class="main">
+    <header class="header">
+      <h3>Main Layout</h3>
+    </header>
+    <div class="sidebar">
+      <h1>Main Layout</h1>
+        <a href="/main">个人信息</a>
+        <a href="/main/profile">修改</a>
+        <a href="/main/github">github查询</a>
+        <a href="/main/other">其他</a>
+    </div>
+    <div class="content">
+      {{> Template.dynamic template=main}}
+    </div>
+    <footer class="footer">
+      <a href="/main">个人信息</a>
+      <a href="/main/profile">修改</a>
+      <a href="/main/github">github查询</a>
+      <a href="/main/other">其他</a>
+    </footer>
+  </div>
+</template>
